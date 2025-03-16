@@ -1,0 +1,75 @@
+/* Estilo para fondo animado */
+.bienvenida-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh; /* Reduje la altura del contenedor de bienvenida */
+    position: relative;
+    animation: fondoAnimado 10s infinite alternate;
+    margin-top: 0;
+    z-index: 1; /* Mantener el fondo debajo del texto */
+}
+
+
+/* Animación de la Pokébola */
+.pokebola {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle, red, white);
+    position: absolute;
+    animation: abrir 3s ease-in-out forwards;
+    z-index: 0; /* Asegurarse de que la Pokébola esté detrás del texto */
+}
+
+@keyframes abrir {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Efecto de resplandor para Pokébola */
+.pokebola.opened {
+    animation: none;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+/* Estilo de Pikachu */
+.pikachu {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    z-index: 0; /* Asegurarse de que Pikachu esté detrás del texto */
+}
+
+.pikachu.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.pikachu img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Ajustar el contenedor principal */
+.container-fluid {
+    padding-top: 20px; /* Ajusté el espaciado entre el texto y el fondo */
+}
+
+/* Ajustar el texto para que esté sobre el fondo */
+.container-fluid h1, .container-fluid p {
+    position: relative;
+    z-index: 2;  /* Asegurarse de que el texto esté encima del fondo animado */
+}

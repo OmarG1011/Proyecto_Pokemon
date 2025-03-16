@@ -1,0 +1,126 @@
+/* Estilo base para las tarjetas */
+.card-iconicos {
+    transition: transform 0.3s ease;
+  }
+  
+  .card-iconicos:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Tipos de Pokémon */
+  .fire {
+    background-color: #f8c2c2;
+    border: 2px solid #f08030;
+  }
+  
+  .water {
+    background-color: #a0c2f1;
+    border: 2px solid #4392f1;
+  }
+  
+  .grass {
+    background-color: #c2f7c2;
+    border: 2px solid #7ac74c;
+  }
+  
+  .electric {
+    background-color: #ffeb3b;
+    border: 2px solid #f6c914;
+  }
+  
+  .rock {
+    background-color: #e5d8b9;
+    border: 2px solid #b9a947;
+  }
+  
+  .normal {
+    background-color: #f5f5f5;
+    border: 2px solid #a8a878;
+  }
+  
+  .bug {
+    background-color: #c2f7c2;
+    border: 2px solid #8d8d2b;
+  }
+  
+  .poison {
+    background-color: #d3f9d8;  /* Verde más claro para tipo Poison */
+    border: 2px solid #9c8e2a;  /* Borde más oscuro para diferenciar */
+  }
+  
+  .fighting {
+    background-color: #e6e1dc;
+    border: 2px solid #cf4b6e;
+  }
+  
+  .ghost {
+    background-color: #b2b2d8;
+    border: 2px solid #6f58e5;
+  }
+  
+  .dragon {
+    background-color: #d6a0ff;
+    border: 2px solid #3b4cca;
+  }
+  
+  /* Otros estilos para hacer las tarjetas más atractivas */
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+
+/* Estilo personalizado para el botón de cambiar Pokémon */
+.btn-change-pokemons {
+    background-color: #ffcb05;  /* Amarillo como el de Pikachu (Electric) */
+    color: white;               /* Texto blanco */
+    border: none;               /* Sin borde */
+    padding: 12px 30px;         /* Espaciado */
+    text-align: center;         /* Centrado del texto */
+    text-decoration: none;      /* Sin subrayado */
+    display: inline-block;      /* Alineación en línea */
+    font-size: 18px;            /* Tamaño de fuente */
+    font-family: 'Pokemon Solid', sans-serif; /* Fuente más amigable tipo Pokémon */
+    border-radius: 50px;        /* Bordes redondeados para dar forma de Pokébola */
+    cursor: pointer;           /* Cambiar el cursor al pasar */
+    transition: all 0.3s ease;  /* Transición suave en cambios */
+    box-shadow: 0 5px 15px rgba(255, 203, 5, 0.5); /* Sombra sutil con tono amarillo */
+  }
+  
+  .btn-change-pokemons i {
+    margin-right: 10px;  /* Separación entre el ícono y el texto */
+  }
+  
+  .btn-change-pokemons:hover {
+    background-color: #ffb300;  /* Amarillo más intenso cuando se pasa el ratón */
+    box-shadow: 0 10px 20px rgba(255, 203, 5, 0.8);  /* Sombra más fuerte */
+    transform: translateY(-5px);  /* Levantar el botón al pasar */
+  }
+  
+  .btn-change-pokemons:active {
+    background-color: #e1a700;  /* Color más oscuro cuando se hace clic */
+    transform: translateY(3px);  /* Efecto de presionar el botón */
+  }
+
+  .card-link {
+    text-decoration: none; /* Elimina el subrayado */
+    color: black;
+  }
+  
+  .card-link:focus {
+    outline: none; /* Elimina el borde azul cuando el enlace tiene foco */
+  }
+  
+  .card-link:hover {
+    text-decoration: none; /* Asegura que el subrayado también se elimine al pasar el mouse */
+  }
+  
