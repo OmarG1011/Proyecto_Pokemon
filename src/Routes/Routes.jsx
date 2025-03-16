@@ -5,8 +5,8 @@ import { DetailsPokemons } from "../pages/DetailsPokemons";
 
 export function MyRoutes() {
     return (
-    <Router>
-        <Routes  basename="/Proyecto_Pokemon">
+    <Router basename="/Proyecto_Pokemon">
+        <Routes >
             <Route exact path="/" element={<Home />} />
             <Route exact path="/Pokemons" element={<SectionPokemons />} />
             <Route path="/pokemon/:id"element={<DetailsPokemons />} />
